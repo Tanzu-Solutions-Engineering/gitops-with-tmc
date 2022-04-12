@@ -1,0 +1,20 @@
+on:
+  push:
+    paths-ignore:
+      - 'tmc-objects-demoflow/**'
+      - 'docker/**'
+      - 'README.md'
+jobs:
+  tmc_ctl_apply_job:
+    runs-on: ubuntu-latest
+    name: TMC Gitops apply
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - name: Tanzu Mission Control Apply
+        uses: chowdhu/chowtmc@v1.0.1
+        id: apply
+        with:          
+          tmc-api-key: ${{secrets.TMC_API_TOKEN}}      

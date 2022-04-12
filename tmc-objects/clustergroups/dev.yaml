@@ -1,0 +1,12 @@
+fullName:
+  name: dev-clustergroup
+meta:  
+  description: My Cluster Group for developers. 
+  labels: 
+    owner: sri-chow
+    country: US
+    env: dev
+type:
+  kind: ClusterGroup
+  package: vmware.tanzu.manage.v1alpha1.clustergroup
+  version: v1alpha1

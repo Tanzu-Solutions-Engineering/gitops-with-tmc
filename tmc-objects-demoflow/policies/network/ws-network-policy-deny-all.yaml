@@ -1,0 +1,10 @@
+type:
+  kind: NetworkPolicy
+  version: v1alpha1
+  package: vmware.tanzu.manage.v1alpha.workspace.policy  
+fullName:
+  name: deny-all-nw-policy
+  workspaceName: secommerce-ws-dev
+spec:
+    type: network-policy
+    recipe: deny-all

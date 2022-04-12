@@ -1,0 +1,20 @@
+fullName:
+  clusterName: dev-cluster
+  managementClusterName: aws-hosted
+  name: gpu-pool
+  provisionerName: sri-chow
+meta:
+  description: "Create a New Node Pool"
+  labels: 
+    owner: sri-chow
+    country: US
+    env: dev
+spec:
+  tkgAws:
+    availabilityZone: us-east-1a
+    instanceType: m5.large
+  workerNodeCount: "1"
+type:
+  kind: Nodepool
+  package: vmware.tanzu.manageinternal.v1alpha1.lifecyclemanager.nodepool
+  version: v1alpha1

@@ -1,0 +1,15 @@
+type:
+  kind: ImagePolicy
+  version: v1alpha1
+  package: vmware.tanzu.manage.v1alpha.workspace.policy  
+fullName:
+  name: dev-registry-docker-policy
+  workspaceName: ecommerce-ws-dev
+spec:
+  input:
+    rules:
+    - hostname: docker.io
+      tag: {}
+  recipe: custom
+  recipeVersion: v1
+  type: image-policy

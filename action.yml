@@ -1,0 +1,14 @@
+# action.yml
+name: 'Tanzu Mission Control Apply'
+description: 'tmcctl apply'
+inputs:
+  tmc-api-key:  # id of input
+    description: 'TMC API Key'
+    required: true       
+runs:
+  using: 'docker'  
+  image: 'docker://docker.io/chowdhu/tmc:1.1'
+  args:
+    - ${{ inputs.tmc-api-key }}
+
+  

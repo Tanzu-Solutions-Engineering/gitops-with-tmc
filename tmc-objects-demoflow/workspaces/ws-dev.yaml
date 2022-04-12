@@ -1,0 +1,13 @@
+fullName:
+  name: ecommerce-ws-dev
+meta:  
+  description: "Ecommerce Workspace for Dev "
+  labels: 
+    owner: sri-chow
+    country: US
+    env: dev
+    app: ecommerce
+type:
+  kind: Workspace
+  package: vmware.tanzu.manage.v1alpha1.workspace
+  version: v1alpha1

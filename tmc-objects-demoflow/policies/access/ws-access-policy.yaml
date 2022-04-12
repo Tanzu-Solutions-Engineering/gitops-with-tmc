@@ -1,0 +1,14 @@
+type:
+  kind: IAMPolicy
+  version: v1alpha2
+  package: vmware.tanzu.manage.v1alpha.workspace.iampolicy  
+workspaceName: ecommerce-ws-dev
+roleBindings:
+- role: workspace.admin
+  subjects:
+  - kind: GROUP
+    name: Devops
+- role: workspace.edit
+  subjects:
+  - kind: GROUP
+    name: Development

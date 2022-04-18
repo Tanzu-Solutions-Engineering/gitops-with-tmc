@@ -14,7 +14,7 @@ jobs:
         with:
           fetch-depth: 2
       - name: Tanzu Mission Control Apply
-        uses: chowdhu/chowtmc@v1.0.1
+        uses: chowdhu/gitopswithtmc@1
         id: apply
         with:          
           tmc-api-key: ${{secrets.TMC_API_TOKEN}}      

@@ -1,7 +1,7 @@
 fullName:
   name: dev-clustergroup
 meta:  
-  description: My Cluster Group for developers. 
+  description: My Cluster Group for Tanzu Service Mesh Demo. 
   labels: 
     owner: sri-chow
     country: US

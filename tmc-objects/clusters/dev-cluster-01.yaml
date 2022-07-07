@@ -1,6 +1,6 @@
 fullName:
   managementClusterName: aws-hosted
-  name: devteam1-cluster
+  name: dev1-cluster
   provisionerName: sri-chow
 meta:
   description: "Cluster for  developers "
